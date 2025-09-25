@@ -5,6 +5,9 @@ ruby "3.2.0"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3"
 
+# Pg is the Ruby interface to the PostgreSQL RDBMS [https://rubygems.org/gems/pg]
+gem 'pg', '~> 1.6', '>= 1.6.2'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
