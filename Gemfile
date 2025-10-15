@@ -5,6 +5,9 @@ ruby "3.2.0"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3"
 
+# Preloads your application so things like console, rake and tests run faster
+gem 'spring', '~> 4.4'
+
 # Pg is the Ruby interface to the PostgreSQL RDBMS [https://rubygems.org/gems/pg]
 gem 'pg', '~> 1.6', '>= 1.6.2'
 
@@ -50,6 +53,12 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+
+  # Loads environment variables from `.env`
+  gem 'dotenv', '~> 3.1', '>= 3.1.8'
+
+  # Autoload dotenv in Rails
+  gem 'dotenv-rails', '~> 3.1', '>= 3.1.8'
 end
 
 group :development do
